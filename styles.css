@@ -50,3 +50,11 @@ ul {
   gap: 50px;
   font-family: "cr-regular";
 }
+
+.header-lore:hover,
+.header-decks:hover,
+.header-signup:hover {
+  display: inline-block;
+  color: rgb(54, 53, 53);
+  transform: scale(1.3);
+}
