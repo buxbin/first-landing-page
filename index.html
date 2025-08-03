@@ -18,16 +18,36 @@
           />
         </div></a>
           
-        <div class="header-name"><h2>HOG RIDAAAA</h2></div>
+        <div class="header-name"><h2 onclick="playHogSound()" style="cursor: pointer;">HOG RIDAAA</h2></div>
         <div class="header-links">
           <ul class="header-list">
-            <li><a href="pages/lore.html" class="header-lore">Lore</a></li>
-            <li><a href="pages/signup.html" class="header-signup">Sign Up</a></li>
-            <li><a href="pages/decks.html" class="header-decks">Decks</a></li>
+            <li><a href="https://clashofclans.fandom.com/wiki/Hog_Rider" class="header-lore" target="_blank" rel="noopener noreferrer">Lore</a></li>
+            <li><a href="https://www.deckshop.pro/best-decks/with/hog-rider" class="header-decks" target="_blank" rel="noopener noreferrer">Decks</a></li>
           </ul>
         </div>
       </div>
-      <div class="hook"></div>
+      <div class="hook">
+        <div class="hook-image"><img src="images/hog-friends.png" alt="Hog-Rider-Hugging-Hog" class="hog-hugging"></div>
+        <div class="hook-sidekick">
+            <h4 class="hook-main">It's a gooood day to be a Hog Rider main!</h4>
+            <h4 class="hook-become-main">It's an even better day to become one!!</h4>
+            <button class="button signup"><a href="https://www.youtube.com/watch?v=IjjbnsegXEM" class="hog-main-link" target="_blank" rel="noopener noreferrer" >BECOME A HOG MAIN</a></button>
+        </div>
+      </div>
     </div>
+    <div class="hog-quote">
+        <h3>HOG RIDAAA</h3>
+        <h2>-Hog Rider</h2>
+    </div>
+
+
+    <audio id="hogSound" src="audio/hog-rider.mp3"></audio>
+    <script>
+  function playHogSound() {
+    const sound = document.getElementById("hogSound");
+    sound.currentTime = 0; // Sound zurücksetzen
+    sound.play(); // Abspielen
+  }
+</script>
   </body>
 </html>

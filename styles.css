@@ -14,7 +14,8 @@
   src: url(fonts/Clash_Regular.otf) format("opentype");
 }
 
-h2 {
+h2,
+h3 {
   font-family: "cr-bold", sans-serif;
 }
 
@@ -33,8 +34,6 @@ ul {
 }
 
 .hero {
-  display: flex;
-  background-color: #00b8ff;
 }
 
 .header {
@@ -42,6 +41,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #00b8ff;
 }
 
 .header-list {
@@ -57,4 +57,111 @@ ul {
   display: inline-block;
   color: rgb(54, 53, 53);
   transform: scale(1.3);
+
+  transition: all 0.3s ease;
+}
+
+.hog-hugging {
+  width: auto;
+  height: 300px;
+}
+
+.hook {
+  display: flex;
+  background-image: url("images/hog-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hook-main,
+.hook-become-main {
+  font-family: "cr-regular";
+  font-size: 25px;
+}
+
+.hook-become-main {
+  margin: auto;
+}
+
+.hook-sidekick {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.signup {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-family: "cr-regular";
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.signup:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.signup:active {
+  transform: scale(0.9);
+}
+
+.hook-image {
+  display: flex;
+}
+
+.hook-image,
+.hook-headline {
+  position: relative;
+  z-index: 2;
+}
+
+.hook::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hog-quote {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hog-quote {
+  background-color: rgb(195, 192, 192);
+}
+
+.hog-quote h3 {
+  font-family: "cr-regular";
+  font-size: 25px;
+}
+
+.hog-quote h2 {
+  margin-left: 400px;
+}
+
+.hog-main-link {
+  text-decoration: none;
 }
